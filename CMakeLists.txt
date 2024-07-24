@@ -5,6 +5,8 @@ project(pipes
         DESCRIPTION "A header only C++ library to create pipelines operating on collections"
         HOMEPAGE_URL "https://github.com/joboccara/pipes")
 
+set(BUILD_TESTING OFF)
+
 include(GNUInstallDirs)
 
 add_library(${PROJECT_NAME} INTERFACE)
