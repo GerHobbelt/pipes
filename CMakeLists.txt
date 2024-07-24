@@ -5,7 +5,7 @@ project(pipes
         DESCRIPTION "A header only C++ library to create pipelines operating on collections"
         HOMEPAGE_URL "https://github.com/joboccara/pipes")
 
-set(BUILD_TESTING OFF)
+set(PIPES_BUILD_TESTING OFF)
 
 include(GNUInstallDirs)
 
@@ -65,6 +65,6 @@ install(FILES ${CONFIG_TARGETS_FILE} DESTINATION ${EXPORT_DESTINATION_DIR})
 
 include(CTest)
 
-if(BUILD_TESTING)
+if(PIPES_BUILD_TESTING)
     add_subdirectory(tests)
 endif()
