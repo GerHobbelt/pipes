@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.12)
 
-set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/install")
+if (NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/install")
+endif()
 
 project(pipes
         VERSION 0.0.1
